@@ -1,6 +1,6 @@
 FROM python:3.7.8-slim
 
-MAINTAINER heumsi@gmail.com
+MAINTAINER reica33@gmail.com
 
 RUN apt-get -y update && \
     apt-get install -y vim && \
@@ -15,4 +15,5 @@ WORKDIR /app
 ENTRYPOINT ["python"]
 CMD ["app.py"]
 
+ENV PORT 5000
 EXPOSE 5000
